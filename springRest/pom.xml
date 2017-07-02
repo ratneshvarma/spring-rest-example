@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <name>springRest</name>
+  <groupId>com.ratnesh.rest</groupId>
+  <artifactId>rest</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modelVersion>4.0.0</modelVersion>
+  <packaging>war</packaging>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
+    <!--Spring mvc-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
+
+<!--for json conversion-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.7.5</version>
+    </dependency>
+<!--for xml conversion-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>2.7.5</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
